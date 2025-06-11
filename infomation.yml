@@ -1,0 +1,277 @@
+personal:
+  name: 林德松
+  email: lindesong666@163.com
+  phone: (+86) 187 6338 6500
+  url:
+  titles:
+    - 后端开发工程师
+    - 算法工程师-机器学习
+  location:
+    country: 中国
+    region: 山东省
+    city: 日照市
+  profiles:
+    - network: GitHub
+      username: desonglll
+      url: https://github.com/desonglll
+
+work:
+  - organization: 山东顺德机械配件有限公司
+    url: https://sdsdsd.online
+    location: 山东省 | 日照市
+    positions:
+      - position: 后端开发工程师
+        startDate: 2022-02-01
+        endDate: 2024-06-01
+        highlights:
+          - 负责仓库管理系统的后端开发，使用Django框架、Rust进行开发
+          - 使用到Postgres、Redis数据库，GraphQL、REST风格API开发
+      - position: 前端开发工程师
+        startDate: 2023-06-01
+        endDate: 2024-06-01
+        highlights:
+          - 负责公司网页的开发，使用React、SvelteKit进行开发
+
+  - organization: 江苏传智播客教育科技股份有限公司济南分公司
+    # url:
+    location: 山东省 | 济南市
+    positions:
+      - position: 后端开发工程师
+        startDate: 2023-12-01
+        endDate: 2024-02-01
+        highlights:
+          - 使用Java、SpringMVC框架、Mybatis进行开发
+          - 前端使用Vue进行构建
+          - 本科生毕业实习经历
+education:
+  - institution: 曲阜师范大学（在读）
+    url: https://www.qfnu.edu.cn/
+    area: 软件工程
+    studyType: 硕士学位
+    startDate: 2024-09-01
+    endDate: "present"
+    location: 山东省 | 济宁市
+    honors:
+    courses:
+      - 机器学习
+      - 深度学习
+      - 算法设计与分析
+      - 生成式AI
+    highlights:
+
+  - institution: 曲阜师范大学
+    url: https://www.qfnu.edu.cn/
+    area: 软件工程
+    studyType: 学士学位
+    startDate: 2020-10-01
+    endDate: 2024-07-01
+    location: 山东省 | 济宁市
+    honors:
+      - 3.06 / 4.0 GPA
+      - 团委学生会副主席
+    courses:
+      - 数据结构与算法
+      - Java程序设计
+      - Python程序设计
+      - 计算机组成原理
+    highlights:
+      - "毕业论文: 基于Django和React的现代化仓库管理系统"
+      - "兴趣爱好: 弹吉他、排球、羽毛球"
+affiliations:
+  - organization: 曲阜师范大学 网络空间安全学院
+    position: 人工智能课题组学生负责人
+    location: 山东省 | 济宁市
+    url:
+    startDate: 2024-09-01
+    endDate: "present"
+    highlights:
+      - 组织整理课题组有关人工智能大模型等相关算法材料
+      - 使用Dify平台编排大模型，构建知识库
+      - 设计并训练图像去雾领域的模型（UNet、VisionMamba等）
+  - organization: 曲阜师范大学 网络空间安全学院
+    position: 团委学生会副主席
+    location: 山东省 | 济宁市
+    url:
+    startDate: 2023-05-01
+    endDate: 2024-05-01
+    highlights:
+      - 负责学院党员团员发展的各项工作
+      - 组织学院的各项大型活动如运动会、毕业晚会等
+      - 统筹学生会各部门有序工作
+awards:
+  - title: 曲阜师范大学研究生“三等奖学金”
+    date: 2024-12-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+  - title: 2024 届山东省优秀毕业生
+    date: 2024-01-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+  - title: "第十五届全国大学生数学竞赛山东赛区 省一等奖"
+    date: 2023-11-01
+    issuer: "全国大学生数学竞赛"
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+  - title: 曲阜师范大学本科生“三等奖学金”
+    date: 2023-11-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+  - title: "软件著作权 e和园校园服务管理平台 "
+    date: 2023-02-01
+    issuer: "中华人民共和国国家版权局"
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+  - title: "软件著作权 党团助手——校园党建平台"
+    date: 2023-01-01
+    issuer: "中华人民共和国国家版权局"
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+  - title: "第二十届山东省大学生软件设计大赛 二等奖"
+    date: 2022-11-01
+    issuer: 山东省大学生软件设计大赛
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+      - "党团助手：微信小程序团队项目，用于提供校内同学入党的相关知识、入党流程、模板材料等"
+      - "团队主要开发者：进行UI的设计绘制与实际开发"
+  - title: "第二十届山东省大学生软件设计大赛 三等奖"
+    date: 2022-11-01
+    issuer: 山东省大学生软件设计大赛
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+      - "济续游宁：微信小程序团队项目，用于提供游客游玩济宁的相关地区的导游介绍、名胜古迹相关信息"
+      - "团队主要开发者：进行UI的设计绘制与实际开发"
+  - title: 曲阜师范大学本科生“二等奖学金”
+    date: 2022-10-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+  - title: 曲阜师范大学“优秀团员”
+    date: 2022-10-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+  - title: "第十九届山东省大学生软件设计大赛 二等奖"
+    date: 2021-11-01
+    issuer: 山东省大学生软件设计大赛
+    url:
+    location: 山东省 ｜ 济南市
+    highlights:
+      - "党帮帮：微信小程序团队项目，用于提供校内同学入党的相关知识、入党流程、模板材料等"
+      - "团队主要开发者：进行UI的设计绘制与实际开发"
+  - title: 曲阜师范大学本科生“三等奖学金”
+    date: 2021-10-01
+    issuer: 曲阜师范大学
+    url:
+    location: 山东省 ｜ 济宁市
+    highlights:
+certificates:
+  - name: "CET英语六级"
+    date: 2023-12-01
+    issuer: CET官方
+    id: "232237201003415"
+  - name: "普通话二级甲等"
+    date: 2022-12-01
+    issuer: 山东省语言文字工作委员会
+    id: "3721032006655"
+
+publications:
+  - name: A Comprehensive Overview of Rust's Role and Potential Directions in AI Development
+    publisher: ""
+    releaseDate: 2025-03-07
+    url: https://example.com
+
+projects:
+  - name: "SD GET"
+    url: https://sdsdsd.online
+    affiliation: 山东顺德机械配件有限公司
+    startDate: 2023-02-01
+    endDate: "present"
+    highlights:
+      - 设计并开发企业的网站页面，展示机械斗齿配件，使用多种前端技术
+      - 由React TS迁移至SvelteKit，进行全网站的迁移重构
+      - 后端数据服务使用Django构建
+
+  - name: "\ue68b\t推校园Tweet"
+    url:
+    affiliation: 曲阜师范大学 网络空间安全学院
+    startDate: 2023-12-01
+    endDate: 2024-06-30
+    highlights:
+      - 基本的学生社交平台，支持文章的增删改查、点赞评论、用户登录和图像上传等功能
+      - 使用Rust构建后端服务，前端使用ReactTS进行构建
+
+skills:
+  - category: 软技能
+    skills:
+      - 演讲
+      - 团队交流
+      - 批判性思维
+      - 团队领导
+      - 技术协作
+  - category: 编程语言
+    skills:
+      - Python
+      - SQL, PostgreSQL
+      - Rust
+      - HTML
+      - CSS
+      - Javascript
+      - Typst
+      - LaTeX
+  - category: 工具
+    skills:
+      - Microsoft Word
+      - Git
+      - Vim
+      - Docker
+      - Visual Studio Code
+      - Figma
+  - category: Web开发
+    skills:
+      - React
+      - Django
+      - Svelte & Sveltekit
+      - Node.js
+      - Deno
+      - FastAPI
+      - Flask
+  - category: BI & 数据分析
+  # Business intelligence
+    skills:
+      - Microsoft Excel
+      - Jupyter Notebook
+      - Numpy
+      - Pandas
+      - Plotly
+
+languages:
+  - language: 英语
+    fluency: CET六级
+
+interests:
+  - 弹吉他
+  - 羽毛球
+  - 排球
+  - 阅读
+  - 听音乐
+
+# references:
+#   # You can comment out the entries below if you don't have any references
+#   # The same goes for the publications
+
+#   - name: 本科生导师
+#     reference: 林德松是一名优秀的学生。他总是渴望学习新事物，对学习充满热情。作为他的导师，我很自豪地说，他也是一位出色的领导者，能够带领他的团队在 2022 年山东省大学生软件设计大赛中取得出色的表现。
+#     # url: 
