@@ -121,7 +121,51 @@
 }
 
 
+#let cveducation(info, title: "\u{f4ca}\t教育背景", isbreakable: true) = {
+  if ("education" in info) and (info.education != none) {
+    block[
+      == #title
+      #for edu in info.education {
+        let start = utils.strpdate(edu.startDate)
+        let end = utils.strpdate(edu.endDate)
+
+        let edu-items = ""
+        if ("honors" in edu) and (edu.honors != none) {
+          edu-items = edu-items + "- *任职荣誉*: " + edu.honors.join(", ") + "\n"
+        }
+        if ("courses" in edu) and (edu.courses != none) {
+          edu-items = edu-items + "- *主修课程*: " + edu.courses.join(", ") + "\n"
+        }
+        if ("highlights" in edu) and (edu.highlights != none) {
+          for hi in edu.highlights {
+            edu-items = edu-items + "- " + hi + "\n"
+          }
+          edu-items = edu-items.trim("\n")
+        }
+
+        // Create a block layout for each education entry
+        block(width: 100%, breakable: isbreakable)[
+          // Line 1: Institution and Location
+          #if ("url" in edu) and (edu.url != none) [
+            === #link(edu.url)[#text[#edu.institution]] #h(1fr) #edu.location \
+          ] else [
+            === #edu.institution #h(1fr) #edu.location \
+          ]
+          // Line 2: Degree and Date
+          #if ("area" in edu) and (edu.area != none) [
+            #text(style: "italic")[#edu.studyType | #edu.area] #h(1fr)
+          ] else [
+            #text(style: "italic")[#edu.studyType] #h(1fr)
+          ]
+          #utils.daterange(start, end) \
+          #eval(edu-items, mode: "markup")
+        ]
+      }
+    ]
+  }
+}
 
 
 #cvheading(info)
 #cvwork(info)
+#cveducation(info)
