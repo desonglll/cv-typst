@@ -1,3 +1,8 @@
+## Clone
+
+```shell
+git clone --recursive git@github.com:desonglll/cv-typst.git
+```
 
 ## Install Typst
 
@@ -8,6 +13,11 @@ cargo install --locked typst-cli
 macOS: `brew install typst`
 Windows: `winget install --id Typst.Typst`
 
+## Compile and watch
+
+```shell
+typst watch resume.typ --font-path=fonts --open
+```
 
 ## Font
 

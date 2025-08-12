@@ -20,23 +20,28 @@
   margin: 1.25cm,
 )
 
-#set text(font: ("Source Han Serif SC", "UbuntuMono Nerd Font"), size: 1em)
+#set text(font: ("Times New Roman", "Source Han Serif SC", "Symbols Nerd Font Mono", "UbuntuMono Nerd Font"), size: 1em)
 
 #show heading.where(level: 1): it => block(width: 100%)[
-  #set text(size: 1.2em, font: "KaiTi", stroke: 0.01em)
+  #set text(size: 1.2em, font: ("Adobe Kaiti Std R", "Symbols Nerd Font Mono"), stroke: 0.01em)
   #it.body
   #v(2pt)
 ]
 
 #show heading.where(level: 2): it => block(width: 100%)[
   #v(0.2em)
-  #set text(size: 1.1em, font: "Source Han Sans SC", stroke: 0em)
+  #set text(size: 1.1em, font: ("Source Han Sans SC", "Symbols Nerd Font Mono"), stroke: 0em)
   #it.body
   #v(-0.75em) #line(length: 100%, stroke: 1pt + black) // draw a line
 ]
 
 #show heading.where(level: 3): it => block(width: 100%)[
-  #set text(size: 1.2em, font: ("Times New Roman", "KaiTi", "UbuntuMono Nerd Font"), weight: "medium", stroke: 0.01em)
+  #set text(
+    size: 1.2em,
+    font: ("Times New Roman", "Adobe Kaiti Std R", "Symbols Nerd Font Mono"),
+    weight: "medium",
+    stroke: 0.01em,
+  )
   #it.body
   #v(2pt)
 ]
@@ -70,10 +75,10 @@
 #let contacttext(info) = block(width: 100%)[
   #let profiles = (
     if "email" in info.personal and info.personal.email != none {
-      box(link("mailto:" + info.personal.email)[\u{f06ee} #info.personal.email])
+      box(link("mailto:" + info.personal.email)[#box(width: 20pt)[\u{f06ee}]#info.personal.email])
     },
     if ("phone" in info.personal and info.personal.phone != none) {
-      box(link("tel:" + info.personal.phone)[\u{f03f2} #info.personal.phone])
+      box(link("tel:" + info.personal.phone)[#box(width: 20pt)[\u{f03f2}]#info.personal.phone])
     } else { none },
     if ("url" in info.personal) and (info.personal.url != none) {
       box(link(info.personal.url)[#info.personal.url.split("//").at(1)])
@@ -82,7 +87,7 @@
 
   #if ("profiles" in info.personal) and (info.personal.profiles.len() > 0) {
     for profile in info.personal.profiles {
-      profiles.push(box(link(profile.url)[#profile.icon #profile.url.split("//").at(1)]))
+      profiles.push(box(link(profile.url)[#box(width: 20pt)[#profile.icon]#profile.url.split("//").at(1)]))
     }
   }
 
@@ -104,7 +109,7 @@
 }
 
 
-#let cvwork(info, title: "\u{efa6}\t工作经历", isbreakable: true) = {
+#let cvwork(info, title: box(width: 20pt)[\u{efa6}] + box()[工作经历], isbreakable: true) = {
   if "work" in info {
     heading(level: 2)[#title]
     if info.work.len() > 0 {
@@ -161,7 +166,7 @@
 }
 
 
-#let cveducation(info, title: "\u{f4ca}\t教育背景", isbreakable: true) = {
+#let cveducation(info, title: box(width: 20pt)[\u{f4ca}] + box()[教育背景], isbreakable: true) = {
   if ("education" in info) and (info.education != none) {
     block[
       == #title
@@ -214,7 +219,7 @@
 }
 
 
-#let cvaffiliations(info, title: "\u{f4c6}\t任职经历", isbreakable: true) = {
+#let cvaffiliations(info, title: box(width: 20pt)[\u{f4c6}] + box()[任职经历], isbreakable: true) = {
   if ("affiliations" in info) and (info.affiliations != none) {
     block[
       == #text[#title]
@@ -239,14 +244,14 @@
             for hi in org.highlights [
               - #eval(hi, mode: "markup")
             ]
-          } else { }
+          } else {}
         ]
       }
     ]
   }
 }
 
-#let cvprojects(info, title: "\u{f4cc}\t项目开发", isbreakable: true) = {
+#let cvprojects(info, title: box(width: 20pt)[\u{f4cc}] + box()[项目开发], isbreakable: true) = {
   if ("projects" in info) and (info.projects != none) {
     block[
       == #text[#title]
@@ -274,7 +279,7 @@
   }
 }
 
-#let cvawards(info, title: "\u{f4cf}\t所获荣誉", isbreakable: true) = {
+#let cvawards(info, title: box(width: 20pt)[\u{f4cf}] + box()[所获荣誉], isbreakable: true) = {
   if ("awards" in info) and (info.awards != none) {
     block[
       == #text[#title]
@@ -306,7 +311,7 @@
             for hi in award.highlights [
               - #eval(hi, mode: "markup")
             ]
-          } else { }
+          } else {}
           #v(0.1em)
         ]
       }
@@ -314,7 +319,7 @@
   }
 }
 
-#let cvcertificates(info, title: "\u{f4cd}\t证书认证", isbreakable: true) = {
+#let cvcertificates(info, title: box(width: 20pt)[\u{f4cd}] + box()[证书认证], isbreakable: true) = {
   if ("certificates" in info) and (info.certificates != none) {
     block[
       == #text[#title]
@@ -342,7 +347,7 @@
   }
 }
 
-#let cvpublications(info, title: "\u{f4cb}\t科研成果", isbreakable: true) = {
+#let cvpublications(info, title: box(width: 20pt)[\u{f4cb}] + box()[科研成果], isbreakable: true) = {
   if ("publications" in info) and (info.publications != none) {
     block[
       == #text[#title]
@@ -369,7 +374,7 @@
   }
 }
 
-#let cvskills(info, title: "\u{f4c8}\t技能兴趣", isbreakable: true) = {
+#let cvskills(info, title: box(width: 20pt)[\u{f4c8}] + box()[技能兴趣], isbreakable: true) = {
   if (
     (("languages" in info) or ("skills" in info) or ("interests" in info))
       and ((info.languages != none) or (info.skills != none) or (info.interests != none))
@@ -398,7 +403,7 @@
   }
 }
 
-#let cvreferences(info, title: "\u{f4ce}\t引用", isbreakable: true) = {
+#let cvreferences(info, title: box(width: 20pt)[\u{f4ce}] + box()[引用], isbreakable: true) = {
   if ("references" in info) and (info.references != none) {
     block[
       == #text(font: "Ubuntu Nerd Font")[#title] #for ref in info.references {
@@ -415,7 +420,7 @@
         ]
       }
     ]
-  } else { }
+  } else {}
 }
 
 #let endnote(uservars) = {
